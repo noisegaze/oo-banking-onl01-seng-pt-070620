@@ -22,9 +22,9 @@ class Transfer
     if  self.status == "pending"
         sender.balance -= self.amount  
         receiver.balance += self.amount 
-     elsif self.status == "complete"
-     nil 
-   end
+      else 
+        self.status == "complete"
+    end
   end
   
   
