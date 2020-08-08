@@ -10,7 +10,8 @@ class Transfer
     @amount = 50
   end
   
-  
+  def 
+  end
   
   
   
