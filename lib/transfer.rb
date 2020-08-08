@@ -10,7 +10,12 @@ class Transfer
     @amount = 50
   end
   
-  def 
+  def valid? 
+    if Bank_account.valid? 
+      true 
+    else 
+      false 
+    end
   end
   
   
