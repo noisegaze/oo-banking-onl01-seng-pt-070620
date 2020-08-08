@@ -19,10 +19,12 @@ class Transfer
   end
   
   def execute_transaction
-      if self.status == "pending" && !sender.balance >= self.amount
+      if self.status == "pending" && sender.balance >= self.amount
         sender.balance -= self.amount  
         receiver.balance += self.amount
         self.status = "complete"
+      else 
+        "Transaction "
       end
     end
   
