@@ -24,6 +24,8 @@ class Transfer
         receiver.balance += self.amount 
       elsif self.status != "pending"
       self.status == "complete"
+    else 
+      nil 
     end
   end
   
